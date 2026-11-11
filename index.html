@@ -469,6 +469,7 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
 .loader.out{transform:translateY(-100%)}
 .loader b{font-family:var(--display);font-weight:800;font-size:clamp(5rem,18vw,16rem);line-height:.8;letter-spacing:-.06em}
 .loader span{font-family:var(--mono);font-size:.8rem;letter-spacing:.2em}
+.loader em{display:block;font-family:var(--display);font-style:normal;font-weight:600;font-size:clamp(1.4rem,3.4vw,2.6rem);letter-spacing:-.02em;line-height:1.1;margin-bottom:10px;opacity:0;animation:fadeIn .5s .1s forwards}
 body.loading .hero h1 .line>span,body.loading .hero-foot p,body.loading .hero-ctas{animation-play-state:paused}
 /* cursor */
 .cur,.cur-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:150;border-radius:50%;transform:translate(-50%,-50%)}
@@ -507,7 +508,7 @@ body.loading .hero h1 .line>span,body.loading .hero-foot p,body.loading .hero-ct
 @media (prefers-reduced-motion:reduce){.grain,.loader,.cur,.cur-ring{display:none}}
 </style>
 <div class="grain" aria-hidden="true"></div>
-<div class="loader" id="loader"><b id="loadN">0</b><span>MS THINK DIFFERENT ©2017</span></div>
+<div class="loader" id="loader"><div><em>Esquentando o algoritmo…</em><b id="loadN">0</b></div><span>MS THINK DIFFERENT ©2017</span></div>
 <div class="cur" id="cur"></div><div class="cur-ring" id="curRing"></div>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script>
